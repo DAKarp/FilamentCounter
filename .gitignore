@@ -1,0 +1,4 @@
+*.checksum
+.vscode/*
+include/config.h
+.pio/build/*

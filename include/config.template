@@ -1,0 +1,29 @@
+// WiFi & Internet
+const char chSSID[] = "";                                      // your network SSID
+const char chPassword[] = "";                      // your network password
+const char* prowlKey = "";
+
+const char* otaHostname = "";
+const char* otaPassword = "";
+const char* mdnsName = "";
+
+#define TIME_ZONE (-8)       // offset from utc
+
+// Pins
+
+// According to documentation, ADC2 is not to be used combined with Wifi - ADC2 uses GPIOs 0, 2, 4, 12, - 15 and 25 - 27
+
+#define ENCODER_PIN_1   16
+#define ENCODER_PIN_2   17
+#define ZERO_BTN_PIN    18
+
+#define OLED_CLOCK  22
+#define OLED_DATA   21
+
+// Hardware
+const float wheelRadius = 139.8;                                    // in mm
+const float encoderPPR = 720;                                       // pulses per revolution (usually twice stated spec)
+const int minStoppedSession = 5;                                    // in sec
+const int minMovementDetected = 15;                                 // in sec
+
+const bool rotate180 = false;
