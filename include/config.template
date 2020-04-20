@@ -1,13 +1,13 @@
 // WiFi & Internet
-const char chSSID[] = "";                                      // your network SSID
-const char chPassword[] = "";                      // your network password
-const char* prowlKey = "";
+const char chSSID[] = "";           // your network SSID
+const char chPassword[] = "";       // your network password
+const char* prowlKey = "";          // register at https://www.prowlapp.com/
 
-const char* otaHostname = "";
-const char* otaPassword = "";
-const char* mdnsName = "";
+const char* mdnsName = "";          // make sure this matches upload_port in platformio.ini (add .local only in the ini file)
+const char* otaHostname = "";       // for simplicity, make it the same as mdnsName
+const char* otaPassword = "";       // can by anything; must match --auth in platformio.ini
 
-#define TIME_ZONE (-8)       // offset from utc
+#define TIME_ZONE (-8)              // offset from utc
 
 // Pins
 
@@ -26,4 +26,4 @@ const float encoderPPR = 720;                                       // pulses pe
 const int minStoppedSession = 5;                                    // in sec
 const int minMovementDetected = 15;                                 // in sec
 
-const bool rotate180 = false;
+const bool rotate180 = false;                                       // set to true if your OLED display is upside down
