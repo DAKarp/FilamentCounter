@@ -23,7 +23,7 @@ const char* otaPassword = "";       // can by anything; must match --auth in pla
 #define OLED_DATA   21
 
 // Hardware
-const float wheelRadius = 139.8;                                    // in mm
+const float pulleyCircumference = 139.8;                            // in mm
 const float encoderPPR = 720;                                       // pulses per revolution (usually twice stated spec)
 const int minStoppedSession = 5;                                    // in sec
 const int minMovementDetected = 15;                                 // in sec

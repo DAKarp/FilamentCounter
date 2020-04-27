@@ -2,3 +2,4 @@
 .vscode/*
 include/config.h
 .pio/build/*
+*.DS_Store

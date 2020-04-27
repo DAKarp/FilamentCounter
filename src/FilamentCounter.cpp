@@ -475,7 +475,7 @@ void setup() {
 }
 
 float correctedPosition() {
-  return (float)position * (wheelRadius / encoderPPR);
+  return (float)position * (pulleyCircumference / encoderPPR);
 }
 
 void sendNotification(const char* major, const char* minor) {
